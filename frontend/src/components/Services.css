@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-services {
+  width: 100%;
+  height: auto;
+}
+.title-services {
+  width: 100%;
+  text-align: center;
+}
+.container-list-services {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.action {
+  width: 200px;
+}

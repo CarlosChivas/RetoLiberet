@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container-home {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.title-welcome {
+  width: 100%;
+  text-align: center;
+}
+.text-credits {
+  margin-top: 40px;
+}
+.btn-logout {
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  background: red;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+}
