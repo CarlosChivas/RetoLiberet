@@ -1,5 +1,6 @@
 import React, { Component, Suspense } from "react";
 import axios from "axios";
+import "./CreateCampaign.css";
 
 class CreateCampaign extends Component {
   constructor(props) {
@@ -41,8 +42,8 @@ class CreateCampaign extends Component {
 
   render() {
     return (
-      <div>
-        <p>Crear una campaña</p>
+      <div className="container-create-campaign">
+        <h2 className="title-create-campaign">Crear una campaña</h2>
         <form onSubmit={this.createCampaign}>
           <input
             type="text"
@@ -58,7 +59,7 @@ class CreateCampaign extends Component {
           </button>
         </form>
 
-        <p>Campañas activas</p>
+        <h2 className="title-active-campaigns">Campañas activas</h2>
         <ul>
           {this.state.campaigns.map((campaign) => {
             return (

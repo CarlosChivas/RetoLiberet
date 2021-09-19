@@ -10,7 +10,6 @@ require('../passport/passport')(passport);
 const mongoose = require("mongoose");
 
 usersCtrl.login = (req, res, next) => {
-    console.log("Se hizo una peticion login")
     passport.authenticate("local", (err, user, info) => {
         if (err) throw err;
         else if (!user) res.send("No user found");

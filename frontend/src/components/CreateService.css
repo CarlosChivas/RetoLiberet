@@ -1,0 +1,11 @@
+.container-create-service {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.title-create-service {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -4,6 +4,8 @@ import axios from "axios";
 
 import CreateAccount from "./CreateAccount";
 
+import "./Login.css";
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -54,8 +56,8 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <p>Bienvenido al login</p>
+      <div className="container-login">
+        <h1 className="title-login">Bienvenido al login</h1>
         <form onSubmit={this.hacerLogin}>
           <input
             type="text"
@@ -79,7 +81,7 @@ class Login extends Component {
         </form>
         <button
           type="button"
-          className="btn btn__newAccount"
+          className="btn-new-account"
           onClick={() => {
             this.showCreateAccount();
           }}

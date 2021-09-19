@@ -1,6 +1,7 @@
 import React, { Component, Suspense } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "./CreateService.css";
 
 class CreateService extends Component {
   constructor(props) {
@@ -35,8 +36,8 @@ class CreateService extends Component {
 
   render() {
     return (
-      <div>
-        <p>Crear un servicio</p>
+      <div className="container-create-service">
+        <h2 className="title-create-service">Crear un servicio</h2>
         <form onSubmit={this.createService}>
           <input
             type="text"

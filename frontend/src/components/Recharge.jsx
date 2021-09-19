@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from "react";
 import axios from "axios";
-
+import "./Recharge.css";
 class Recharge extends Component {
   constructor(props) {
     super(props);
@@ -26,18 +26,18 @@ class Recharge extends Component {
 
   render() {
     return (
-      <div>
-        <p>Bienvenido al sistema de recargas</p>
+      <div className="container-recharge">
+        <h2 className="title-recharge">Bienvenido al sistema de recargas</h2>
         <form onSubmit={this.recharge}>
           <input
             type="number"
-            className={`password`}
+            className="amount-recharge"
             placeholder="Cantidad"
             name="password"
             onChange={(e) => this.setState({ amount: e.target.value })}
             required
           />
-          <button type="submit" className="btn">
+          <button type="submit" className="btn-recharge">
             <div className="btn__text">Recargar</div>
           </button>
         </form>

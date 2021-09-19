@@ -1,0 +1,15 @@
+.container-recharge {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+.title-recharge {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title-active-campaigns {
+  margin-top: 50px;
+}
